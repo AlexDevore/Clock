@@ -16,14 +16,14 @@ How to Use
     
 Example
 
-  enter hour:
-  12
-  enter minutes:
-  30
-  enter seconds:
-  45
-  12:30:45
-  12:30:46
-  12:30:47
+    enter hour:
+    12
+    enter minutes:
+    30
+    enter seconds:
+    45
+    12:30:45
+    12:30:46
+    12:30:47
 
 If you find any issues or have any suggestions, please open an issue or contribute to the project.
