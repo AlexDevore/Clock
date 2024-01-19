@@ -15,7 +15,7 @@ int main()
         cin >> m;
         cout << "enter seconds: " << endl;
         cin >> s;
-        if (h < 23 && m < 60 && s < 60)
+        if (h < 24 && m < 60 && s < 60)
         {
             err++;
         }
