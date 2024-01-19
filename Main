@@ -1,0 +1,50 @@
+#include <iostream>
+#include <iomanip>
+#include <windows.h>
+using namespace std;
+
+int main()
+{
+    int h, m, s, a, err;
+    err = a = 0;
+    while (err == 0)
+    {
+        cout << "enter hour: " << endl;
+        cin >> h;
+        cout << "enter minutes: " << endl;
+        cin >> m;
+        cout << "enter seconds: " << endl;
+        cin >> s;
+        if (h < 23 && m < 60 && s < 60)
+        {
+            err++;
+        }
+        else
+        {
+            system("cls");
+        }
+        while (a == 0)
+        {
+            system("cls");
+            cout << setfill('0') << setw(2) << h << ":" << setw(2) << m << ":" << setw(2) << s << endl;
+            Sleep(1000);
+            s++;
+            if (s > 59)
+            {
+                s = 0;
+                m++;
+            }
+            if (m > 59)
+            {
+                m = 0;
+                h++;
+            }
+            if (h > 23)
+            {
+                h = 0;
+            }
+            
+        }
+        return 0;
+    }
+}
